@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import {PropTypes} from 'prop-types'
 import {Button} from 'react-bootstrap';
 import {Modal} from 'react-bootstrap';
+import CustomerForm from './CustomerForm.jsx'
 
 class AccessModal extends Component {
     constructor(props) {
@@ -29,6 +31,7 @@ class AccessModal extends Component {
             <div>
                 <Button
                     bsStyle="success"
+                    bsSize={this.props.buttonSize}
                     onClick={this.openModal}
                 >
                 Get Early Access
@@ -39,14 +42,21 @@ class AccessModal extends Component {
                         <Modal.Title>Get Early Access</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <h4>
-                            We're excited to save you money on meals, while you save the planet.
-                        </h4>
+                        <div className="modalTitleBlock">
+                            <h4 className="modalTitleText">
+                                We're excited to save you money on meals, while you save the planet.
+                            </h4>
+                        </div>
+                        <CustomerForm/>
                     </Modal.Body>
                 </Modal>
             </div>
         )
     }
+}
+
+AccessModal.propTypes = {
+    buttonSize: PropTypes.string
 }
 
 export default AccessModal;

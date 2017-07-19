@@ -1,0 +1,47 @@
+.jumbotron {
+    background-image: url("http://i.imgur.com/6t8ki6Q.jpg");
+    background-position: 50% 30%;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 11%;
+}
+
+.sectionOneHeader {
+    padding: 110px 10px 85px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modalTitleBlock {
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
+
+.modalTitleText {
+    font-size: 170%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.customerFormSubmit {
+    padding-top: 30px;
+}
+
+.customerFormBlock {
+    padding-bottom: 15px;
+}
+
+.navbar-nav li a {
+    line-height: 2.3em;
+    padding-right: 2em;
+}
+
+.navbar-brand {
+    line-height: 1.5em;
+    padding-left: 2em;
+    font-size: 1.75em;
+}
+
+.navbarEateryLink {
+    font-size: 1.1em;
+}
