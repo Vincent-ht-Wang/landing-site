@@ -11,7 +11,7 @@ class MyNavbar extends Component {
                 <Navbar fixedTop fluid>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/"> grood </a>
+                            <a href="/"> grubsnatch </a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>

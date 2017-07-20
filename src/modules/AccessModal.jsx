@@ -30,9 +30,9 @@ class AccessModal extends Component {
         return(
             <div>
                 <Button
-                    bsStyle="success"
                     bsSize={this.props.buttonSize}
                     onClick={this.openModal}
+                    className="accessButton"
                 >
                 Get Early Access
                 </Button>
@@ -44,7 +44,7 @@ class AccessModal extends Component {
                     <Modal.Body>
                         <div className="modalTitleBlock">
                             <h4 className="modalTitleText">
-                                We're excited to save you money on meals, while you save the planet.
+                                We're <span id="excited">excited</span> to <span id="saveModal">save</span> you money on meals, while you save the planet.
                             </h4>
                         </div>
                         <CustomerForm/>

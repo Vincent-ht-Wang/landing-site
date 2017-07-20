@@ -3,6 +3,7 @@ import {FormControl} from 'react-bootstrap';
 import {FormGroup} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {ControlLabel} from 'react-bootstrap';
+import {FieldGroup} from 'react-bootstrap';
 
 class CustomerForm extends Component {
     constructor(props) {
@@ -31,35 +32,29 @@ class CustomerForm extends Component {
         return(
             <form>
                 <div className="customerFormBlock">
-                    <FormGroup>
-                        <ControlLabel>
-                            Full Name:
-                        </ControlLabel>
+                    <FormGroup className="emailInput">
+                        <FormControl
+                            type="text"
+                            value={this.state.emailValue}
+                            placeholder="Email"
+                            onChange={this.handleEmailChange}
+                        >
+                        </FormControl>
+                    </FormGroup>
+                    <FormGroup className="passwordInput">
                         <FormControl
                             type="text"
                             value={this.state.nameValue}
-                            placeholder="Full Name"
+                            placeholder="Password"
                             onChange={this.handleNameChange}
                         >
                         </FormControl>
                     </FormGroup>
                 </div>
-                <FormGroup>
-                    <ControlLabel>
-                        Email:
-                    </ControlLabel>
-                    <FormControl
-                        type="text"
-                        value={this.state.emailValue}
-                        placeholder="Enter email"
-                        onChange={this.handleEmailChange}
-                    >
-                    </FormControl>
-                </FormGroup>
                 <div className="customerFormSubmit">
                     <Button 
                     type="submit"
-                    bsStyle="success"
+                    className="customerSubmitButton"
                     block
                     >
                         Submit 

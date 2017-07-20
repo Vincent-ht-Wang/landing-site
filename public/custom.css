@@ -1,47 +1,172 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('http://fonts.googleapis.com/css?family=Proxima+Nova');
+}
+
 .jumbotron {
-    background-image: url("http://i.imgur.com/6t8ki6Q.jpg");
-    background-position: 50% 30%;
+    background-image: url("http://i.imgur.com/RHl6wsO.jpg");
+    background-position: 50% 50%;
     background-size: 100%;
     text-align: center;
     color: white;
-    padding-bottom: 11%;
+    padding-top: 6.5%;
+    padding-bottom: 7.85%;
+    margin-bottom: 0;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#jumbotronTwo {
+    background: white;
+    color: #040d14;
+    background-size: 100%;
+    vertical-align: middle;
+    padding: 2em 12em 3em 12em;
+}
+
+#jumbotronThree {
+    background: #040d14;
+    color: #21ce6e;
+    padding-top: 2em;
+}
+
+.accessButton {
+    background-color: #21ce6e;
+    color: white;
+    border-color: #21ce6e;
+}
+
+.accessButton:active {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.accessButton:hover {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.accessButton:focus {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.sectionTwoL1 {
+    line-height: 3;
+}
+
+.sectionTwoP1 {
+    line-height: 1.5;
+    font-size: 12%;
+}
+
+.customerSubmitButton {
+    background-color: #21ce6e;
+    color: white;
+    border-color: #21ce6e;
+}
+
+.customerSubmitButton:active {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.customerSubmitButton:hover {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.customerSubmitButton:focus {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.modal-header {
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .sectionOneHeader {
-    padding: 110px 10px 85px 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 110px 40px 85px 40px;
 }
 
 .modalTitleBlock {
     padding-bottom: 5px;
     padding-top: 0px;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .modalTitleText {
     font-size: 170%;
     text-align: center;
     line-height: 35px;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.emailInput {
+    padding-bottom: 1em;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+.passwordInput {
+    padding-left: 7em;
+    padding-right: 7em;
 }
 
 .customerFormSubmit {
-    padding-top: 30px;
+    padding-top: 1em;
+    padding-left: 14em;
+    padding-right: 14em;
 }
 
 .customerFormBlock {
-    padding-bottom: 15px;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-nav li a {
     line-height: 2.3em;
     padding-right: 2em;
+    color: black;
 }
 
 .navbar-brand {
     line-height: 1.5em;
     padding-left: 2em;
     font-size: 1.75em;
+    color: black;
 }
 
 .navbarEateryLink {
     font-size: 1.1em;
+}
+
+#unsold {
+    color: #21ce6e;
+}
+
+#discount {
+    color: #21ce6e;
+}
+
+#trash {
+    color: #21ce6e;
+}
+
+#helps {
+    color: #21ce6e;
+}
+
+#excited {
+    color: #21ce6e;
+}
+
+#saveModal {
+    color: #21ce6e;
+}
+
+#sectionTwoDiscountDivider {
+    padding-bottom: 0.85em;
 }

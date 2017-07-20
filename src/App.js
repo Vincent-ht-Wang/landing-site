@@ -5,7 +5,7 @@ import {Col} from 'react-bootstrap';
 import MyNavbar from './modules/MyNavbar.jsx';
 import SectionOne from './modules/SectionOne.jsx'
 import SectionTwo from './modules/SectionTwo.jsx'
-
+import SectionThree from './modules/SectionThree.jsx';
 
 class App extends Component {
   	render() {
@@ -20,6 +20,7 @@ class App extends Component {
 				</Grid>
 				<SectionOne/>
 				<SectionTwo/>
+				<SectionThree/>
 			</div>
 		);
   	}
