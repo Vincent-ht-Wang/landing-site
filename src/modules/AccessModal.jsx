@@ -38,9 +38,6 @@ class AccessModal extends Component {
                 </Button>
 
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Get Early Access</Modal.Title>
-                    </Modal.Header>
                     <Modal.Body>
                         <div className="modalTitleBlock">
                             <h4 className="modalTitleText">

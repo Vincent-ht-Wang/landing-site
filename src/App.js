@@ -11,13 +11,7 @@ class App extends Component {
   	render() {
 		return (
 			<div className="App">
-				<Grid fluid>
-					<Row>
-						<Col md={12}>
-							<MyNavbar/>
-						</Col>
-					</Row>
-				</Grid>
+				<MyNavbar/>
 				<SectionOne/>
 				<SectionTwo/>
 				<SectionThree/>

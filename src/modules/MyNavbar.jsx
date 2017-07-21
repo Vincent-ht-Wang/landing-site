@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import {NavItem} from 'react-bootstrap';
+import {Image} from 'react-bootstrap';
 import AccessModal from './AccessModal.jsx';
 
 class MyNavbar extends Component {
@@ -11,7 +12,9 @@ class MyNavbar extends Component {
                 <Navbar fixedTop fluid>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/"> grubsnatch </a>
+                            <a href="/">
+                                <Image src="http://imgur.com/eP4aSzV.jpg" id="navbarLogo"/>
+                            </a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>

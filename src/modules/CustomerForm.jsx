@@ -34,7 +34,7 @@ class CustomerForm extends Component {
                 <div className="customerFormBlock">
                     <FormGroup className="emailInput">
                         <FormControl
-                            type="text"
+                            type="email"
                             value={this.state.emailValue}
                             placeholder="Email"
                             onChange={this.handleEmailChange}
@@ -43,7 +43,7 @@ class CustomerForm extends Component {
                     </FormGroup>
                     <FormGroup className="passwordInput">
                         <FormControl
-                            type="text"
+                            type="password"
                             value={this.state.nameValue}
                             placeholder="Password"
                             onChange={this.handleNameChange}

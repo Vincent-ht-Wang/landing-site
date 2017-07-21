@@ -1,3 +1,7 @@
+#temporary {
+    padding-top: 10em;
+}
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url('http://fonts.googleapis.com/css?family=Proxima+Nova');
@@ -10,7 +14,7 @@
     text-align: center;
     color: white;
     padding-top: 6.5%;
-    padding-bottom: 7.85%;
+    padding-bottom: 7.95%;
     margin-bottom: 0;
     font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -24,9 +28,20 @@
 }
 
 #jumbotronThree {
-    background: #040d14;
-    color: #21ce6e;
-    padding-top: 2em;
+    background: #161618;
+    color: white;
+    padding-bottom: 2.5em;
+}
+
+#navbarLogo {
+    max-height: 1600%;
+    max-width: 40%;
+    overflow: visible;
+    margin-top: -2.2%;
+}
+
+.howDescription {
+    color: white;
 }
 
 .accessButton {
@@ -56,7 +71,6 @@
 
 .sectionTwoP1 {
     line-height: 1.5;
-    font-size: 12%;
 }
 
 .customerSubmitButton {
@@ -80,12 +94,12 @@
     border-color: #69efa4;
 }
 
-.modal-header {
-    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 .sectionOneHeader {
     padding: 110px 40px 85px 40px;
+}
+
+#sectionThreeModal {
+    margin-top: 4.5em;
 }
 
 .modalTitleBlock {
@@ -105,19 +119,20 @@
 
 .emailInput {
     padding-bottom: 1em;
-    padding-left: 7em;
-    padding-right: 7em;
+    padding-left: 6em;
+    padding-right: 6em;
 }
 
 .passwordInput {
-    padding-left: 7em;
-    padding-right: 7em;
+    padding-left: 6em;
+    padding-right: 6em;
 }
 
 .customerFormSubmit {
     padding-top: 1em;
-    padding-left: 14em;
-    padding-right: 14em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 1em;
 }
 
 .customerFormBlock {
@@ -132,8 +147,9 @@
     color: black;
 }
 
-.navbar-brand {
-    line-height: 1.5em;
+.navbar .navbar-brand {
+    padding-top: 0.65em;
+    padding-bottom: 1em;
     padding-left: 2em;
     font-size: 1.75em;
     color: black;
@@ -152,7 +168,7 @@
 }
 
 #trash {
-    color: #21ce6e;
+    color: #FF4B54;
 }
 
 #helps {
@@ -160,10 +176,46 @@
 }
 
 #excited {
-    color: #21ce6e;
+    color: #FF4B54;
+}
+
+#closing {
+    color: #FF4B54;
 }
 
 #saveModal {
+    color: #21ce6e;
+}
+
+#grubsnatch {
+    color: #FF4B54;
+}
+
+#still {
+    color: #21ce6e;
+}
+
+#easily {
+    color: #21ce6e;
+}
+
+#taste {
+    color: #FF4B54;
+}
+
+#order {
+    color: #21ce6e;
+}
+
+#grab {
+    color: #21ce6e;
+}
+
+#meal {
+    color: #FF4B54;
+}
+
+#saved {
     color: #21ce6e;
 }
 
