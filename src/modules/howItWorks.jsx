@@ -9,25 +9,25 @@ class HowItWorks extends Component {
     render() {
         return(
             <div>
-                <Grid fluid>
+                <Grid id="howItWorksGrid"fluid>
                     <Row>
-                        <Col md={4}>
-                            <div className="searchIcon">
-                                <Image responsive/>
+                        <Col md={4} lg={4}>
+                            <div className="iconClass">
+                                <Image src="http://imgur.com/jyJBOjZ.jpg" className="icon"responsive/>
                             </div>
                         </Col>
-                        <Col md={4}>
-                            <div className="payIcon">
-                                <Image responsive/>
+                        <Col md={4} lg={4}>
+                            <div className="iconClass">
+                                <Image src="http://imgur.com/iIn4MFv.jpg" className="icon"responsive/>
                             </div>
                         </Col>
-                        <Col md={4}>
+                        <Col md={4} lg={4}>
                             <div className="eatIcon">
-                                <Image responsive/>
+                                <Image src="http://imgur.com/s8i5tWh.jpg" id="takeaway"responsive/>
                             </div>
                         </Col>
                     </Row>
-                    <Row id="temporary">
+                    <Row id="howItWorksDescription">
                         <Col md={4}>
                             <p>
                                 Easily <span id="easily">find </span>a closing eatery nearby that suits your taste

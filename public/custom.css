@@ -1,10 +1,12 @@
-#temporary {
-    padding-top: 10em;
-}
-
 @font-face {
     font-family: 'Proxima Nova';
     src: url('http://fonts.googleapis.com/css?family=Proxima+Nova');
+}
+
+@media (max-width: 767px) {
+    #navbarLogo {
+        margin-top: -100%
+    }
 }
 
 .jumbotron {
@@ -40,8 +42,33 @@
     margin-top: -2.2%;
 }
 
+.icon {
+    max-width: 45%;
+    max-height: 45%;
+}
+
+#takeaway {
+    max-width: 60%;
+    max-height: 60%;
+}
+
 .howDescription {
     color: white;
+}
+
+.iconClass {
+    padding-left: 10.5em;
+    padding-bottom: 0em;
+    padding-top: 3em;
+}
+
+.eatIcon {
+    padding-left: 9em;
+    padding-bottom: 1em;
+}
+
+#howItWorksGrid {
+    padding-top: -50%;
 }
 
 .accessButton {
@@ -196,7 +223,7 @@
 }
 
 #easily {
-    color: #21ce6e;
+    color: #FF4B54;
 }
 
 #taste {
@@ -204,7 +231,7 @@
 }
 
 #order {
-    color: #21ce6e;
+    color: #FF4B54;
 }
 
 #grab {
