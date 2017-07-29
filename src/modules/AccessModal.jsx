@@ -39,11 +39,9 @@ class AccessModal extends Component {
 
                 <Modal show={this.state.isOpen} onHide={this.closeModal}>
                     <Modal.Body>
-                        <div className="modalTitleBlock">
-                            <h4 className="modalTitleText">
-                                We're <span id="excited">excited</span> to <span id="saveModal">save</span> you money on meals, while you save the planet.
-                            </h4>
-                        </div>
+                        <h4 className="modalTitleText">
+                            We're <span className="redText">excited</span> to <span className="greenText">save</span> you money on meals, while you save the planet.
+                        </h4>
                         <CustomerForm/>
                     </Modal.Body>
                 </Modal>

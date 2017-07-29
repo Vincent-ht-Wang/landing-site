@@ -8,44 +8,38 @@ import AccessModal from './AccessModal';
 class HowItWorks extends Component {
     render() {
         return(
-            <div>
-                <Grid id="howItWorksGrid"fluid>
+            <div className="howItWorksBlock">
+                <Grid fluid>
                     <Row>
                         <Col md={4} lg={4}>
-                            <div className="iconClass">
-                                <Image src="http://imgur.com/jyJBOjZ.jpg" className="icon"responsive/>
-                            </div>
+                            <Image src="http://imgur.com/jyJBOjZ.jpg" className="stepIcon"responsive/>
                         </Col>
                         <Col md={4} lg={4}>
-                            <div className="iconClass">
-                                <Image src="http://imgur.com/iIn4MFv.jpg" className="icon"responsive/>
-                            </div>
+                            <Image src="http://imgur.com/iIn4MFv.jpg" className="stepIcon"responsive/>
                         </Col>
                         <Col md={4} lg={4}>
-                            <div className="eatIcon">
-                                <Image src="http://imgur.com/s8i5tWh.jpg" id="takeaway"responsive/>
-                            </div>
+                            <Image src="http://imgur.com/s8i5tWh.jpg" className="eatIcon"responsive/>
                         </Col>
                     </Row>
-                    <Row id="howItWorksDescription">
-                        <Col md={4}>
+                    <Row>
+                        <Col md={4} lg={4}>
                             <p>
-                                Easily <span id="easily">find </span>a closing eatery nearby that suits your taste
+                                Easily <span className="redText">find </span>a closing eatery nearby that suits your taste
                             </p>
                         </Col>
-                        <Col md={4}>
+                        <Col md={4} lg={4}>
                             <p>
-                                <span id="order">Order</span> and purchase your meal through the web-app
+                                <span className="redText">Order</span> and purchase your meal through the web-app
                             </p>
                         </Col>
-                        <Col md={4}>
+                        <Col md={4} lg={4}>
                             <p>
-                                <span id="grab">Grab</span> your meal at the eatery knowing you <span id="saved">saved</span> money and the planet
+                                <span className="greenText">Grab</span> your meal at the eatery knowing you <span className="greenText">saved</span> money and the planet
                             </p>
                         </Col>
                     </Row>
                 </Grid>
-                <div id="sectionThreeModal">
+                <div className="finalAccessButton">
                     <AccessModal buttonSize="large"/>
                 </div>
             </div>

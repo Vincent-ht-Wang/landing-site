@@ -3,22 +3,47 @@
     src: url('http://fonts.googleapis.com/css?family=Proxima+Nova');
 }
 
-@media (max-width: 767px) {
-    #navbarLogo {
-        margin-top: -100%
-    }
+@media (max-width: 767px) {}
+
+.greenText {
+    color: #21ce6e;
+}
+
+.redText {
+    color: #FF4B54;
+}
+
+#navbarLogo {
+    max-height: 10em;
+    max-width: 15em;
+    overflow: visible;
+    margin-top: 0.4em;
+}
+
+.navbar-nav li a {
+    line-height: 2.3em;
+    padding-right: 2em;
+    color: black;
+    font-size: 1.1em;
 }
 
 .jumbotron {
-    background-image: url("http://i.imgur.com/RHl6wsO.jpg");
     background-position: 50% 50%;
     background-size: 100%;
     text-align: center;
     color: white;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#jumbotronOne {
+    background-image: url("http://i.imgur.com/RHl6wsO.jpg");
     padding-top: 6.5%;
     padding-bottom: 7.95%;
     margin-bottom: 0;
-    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sectionOneHeader {
+    padding: 110px 40px 85px 40px;
 }
 
 #jumbotronTwo {
@@ -27,36 +52,26 @@
     background-size: 100%;
     vertical-align: middle;
     padding: 2em 12em 3em 12em;
+    margin-bottom: 0.65em;
+}
+
+.sectionTwoHeader {
+    line-height: 3;
+}
+
+.sectionTwoSubtext {
+    line-height: 2;
 }
 
 #jumbotronThree {
     background: #161618;
     color: white;
-    padding-bottom: 2.5em;
+    margin-bottom: -2em;
 }
 
-#navbarLogo {
-    max-height: 1600%;
-    max-width: 40%;
-    overflow: visible;
-    margin-top: -2.2%;
-}
-
-.icon {
-    max-width: 45%;
-    max-height: 45%;
-}
-
-#takeaway {
-    max-width: 60%;
-    max-height: 60%;
-}
-
-.howDescription {
-    color: white;
-}
-
-.iconClass {
+.stepIcon {
+    max-width: 65%;
+    max-height: 65%;
     padding-left: 10.5em;
     padding-bottom: 0em;
     padding-top: 3em;
@@ -65,39 +80,44 @@
 .eatIcon {
     padding-left: 9em;
     padding-bottom: 1em;
+    max-width: 75%;
+    max-height: 75%;
 }
 
-#howItWorksGrid {
-    padding-top: -50%;
+.finalAccessButton {
+    margin-top: 4.5em;
 }
 
-.accessButton {
-    background-color: #21ce6e;
-    color: white;
-    border-color: #21ce6e;
+.howItWorksBlock {
+    margin-right: 1.15em;
 }
 
-.accessButton:active {
-    background-color: #69efa4;
-    border-color: #69efa4;
+.modalTitleText {
+    padding-bottom: -4em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 170%;
+    text-align: center;
+    line-height: 35px;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.accessButton:hover {
-    background-color: #69efa4;
-    border-color: #69efa4;
+.customerInput {
+    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
-.accessButton:focus {
-    background-color: #69efa4;
-    border-color: #69efa4;
+.customerFormBlock {
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.sectionTwoL1 {
-    line-height: 3;
-}
-
-.sectionTwoP1 {
-    line-height: 1.5;
+.customerSubmitAdjustor {
+    padding-bottom: 1em;
+    padding-left: 8em;
+    padding-right: 8em;
 }
 
 .customerSubmitButton {
@@ -121,131 +141,23 @@
     border-color: #69efa4;
 }
 
-.sectionOneHeader {
-    padding: 110px 40px 85px 40px;
+.accessButton {
+    background-color: #21ce6e;
+    color: white;
+    border-color: #21ce6e;
 }
 
-#sectionThreeModal {
-    margin-top: 4.5em;
+.accessButton:active {
+    background-color: #69efa4;
+    border-color: #69efa4;
 }
 
-.modalTitleBlock {
-    padding-bottom: 5px;
-    padding-top: 0px;
-    padding-left: 5em;
-    padding-right: 5em;
-    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.accessButton:hover {
+    background-color: #69efa4;
+    border-color: #69efa4;
 }
 
-.modalTitleText {
-    font-size: 170%;
-    text-align: center;
-    line-height: 35px;
-    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.emailInput {
-    padding-bottom: 1em;
-    padding-left: 6em;
-    padding-right: 6em;
-}
-
-.passwordInput {
-    padding-left: 6em;
-    padding-right: 6em;
-}
-
-.customerFormSubmit {
-    padding-top: 1em;
-    padding-left: 10em;
-    padding-right: 10em;
-    padding-bottom: 1em;
-}
-
-.customerFormBlock {
-    padding-top: 1.5em;
-    padding-bottom: 0.5em;
-    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.navbar-nav li a {
-    line-height: 2.3em;
-    padding-right: 2em;
-    color: black;
-}
-
-.navbar .navbar-brand {
-    padding-top: 0.65em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    font-size: 1.75em;
-    color: black;
-}
-
-.navbarEateryLink {
-    font-size: 1.1em;
-}
-
-#unsold {
-    color: #21ce6e;
-}
-
-#discount {
-    color: #21ce6e;
-}
-
-#trash {
-    color: #FF4B54;
-}
-
-#helps {
-    color: #21ce6e;
-}
-
-#excited {
-    color: #FF4B54;
-}
-
-#closing {
-    color: #FF4B54;
-}
-
-#saveModal {
-    color: #21ce6e;
-}
-
-#grubsnatch {
-    color: #FF4B54;
-}
-
-#still {
-    color: #21ce6e;
-}
-
-#easily {
-    color: #FF4B54;
-}
-
-#taste {
-    color: #FF4B54;
-}
-
-#order {
-    color: #FF4B54;
-}
-
-#grab {
-    color: #21ce6e;
-}
-
-#meal {
-    color: #FF4B54;
-}
-
-#saved {
-    color: #21ce6e;
-}
-
-#sectionTwoDiscountDivider {
-    padding-bottom: 0.85em;
+.accessButton:focus {
+    background-color: #69efa4;
+    border-color: #69efa4;
 }

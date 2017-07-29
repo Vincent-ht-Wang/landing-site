@@ -2,23 +2,26 @@ import React, { Component } from 'react';
 import {FormControl} from 'react-bootstrap';
 import {FormGroup} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
-import {ControlLabel} from 'react-bootstrap';
-import {FieldGroup} from 'react-bootstrap';
 
 class CustomerForm extends Component {
     constructor(props) {
         super(props)
         this.handleEmailChange = this.handleEmailChange.bind(this)
-        this.handleNameChange = this.handleNameChange.bind(this)
+        this.handlePassChange = this.handlePassChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
         this.state = {
-            nameValue: "",  
+            PassValue: "",  
             emailValue: ""
         }
     }
 
-    handleNameChange(e) {
+    handleSubmit(e) {
+        e.preventDefault();
+    }
+
+    handlePassChange(e) {
         this.setState({
-            nameValue: e.target.value
+            passValue: e.target.value
         })
     }
 
@@ -32,7 +35,7 @@ class CustomerForm extends Component {
         return(
             <form>
                 <div className="customerFormBlock">
-                    <FormGroup className="emailInput">
+                    <FormGroup className="customerInput">
                         <FormControl
                             type="email"
                             value={this.state.emailValue}
@@ -41,25 +44,26 @@ class CustomerForm extends Component {
                         >
                         </FormControl>
                     </FormGroup>
-                    <FormGroup className="passwordInput">
+                    <FormGroup className="customerInput">
                         <FormControl
                             type="password"
                             value={this.state.nameValue}
                             placeholder="Password"
-                            onChange={this.handleNameChange}
+                            onChange={this.handlePassChange}
                         >
                         </FormControl>
                     </FormGroup>
                 </div>
-                <div className="customerFormSubmit">
-                    <Button 
-                    type="submit"
-                    className="customerSubmitButton"
-                    block
-                    >
-                        Submit 
-                    </Button>
-                </div>
+                    <div className="customerSubmitAdjustor">
+                        <Button 
+                        type="submit"
+                        className="customerSubmitButton"
+                        block
+                        onClick={this.handleSubmit}
+                        >
+                            Submit 
+                        </Button>
+                    </div>
             </form>
         )
     }

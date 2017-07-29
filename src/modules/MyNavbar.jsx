@@ -11,11 +11,9 @@ class MyNavbar extends Component {
             <div>
                 <Navbar fixedTop fluid>
                     <Navbar.Header>
-                        <Navbar.Brand>
-                            <a href="/">
-                                <Image src="http://imgur.com/eP4aSzV.jpg" id="navbarLogo"/>
-                            </a>
-                        </Navbar.Brand>
+                        <a href="/">
+                            <Image src="http://imgur.com/eP4aSzV.jpg" id="navbarLogo" className="navbar-left"/>
+                        </a>
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse>
@@ -23,7 +21,7 @@ class MyNavbar extends Component {
                             <NavItem eventKey={1} href="#"> 
                                 <AccessModal/>
                             </NavItem>
-                            <NavItem eventKey={2} href="/eateries" className="navbarEateryLink"> 
+                            <NavItem eventKey={2} href="/eateries"> 
                                 For Eateries 
                             </NavItem>
                         </Nav>

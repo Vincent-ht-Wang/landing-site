@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import {Grid} from 'react-bootstrap';
-import {Row} from 'react-bootstrap';
-import {Col} from 'react-bootstrap';
 import MyNavbar from './modules/MyNavbar.jsx';
 import SectionOne from './modules/SectionOne.jsx'
 import SectionTwo from './modules/SectionTwo.jsx'
