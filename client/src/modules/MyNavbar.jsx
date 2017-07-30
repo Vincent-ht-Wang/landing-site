@@ -12,7 +12,7 @@ class MyNavbar extends Component {
                 <Navbar fixedTop fluid>
                     <Navbar.Header>
                         <a href="/">
-                            <Image src="http://imgur.com/W3mmu6R.jpg" id="navbarLogo" className="navbar-left"/>
+                            <Image src="/assets/landingPage2.jpg" id="navbarLogo" className="navbar-left"/>
                         </a>
                         <Navbar.Toggle />
                     </Navbar.Header>
