@@ -12,13 +12,13 @@ class HowItWorks extends Component {
                 <Grid fluid>
                     <Row>
                         <Col md={4} lg={4}>
-                            <Image src="http://imgur.com/jyJBOjZ.jpg" className="stepIcon"responsive/>
+                            <Image src="/assets/icons/lens.png" className="stepIcon"responsive/>
                         </Col>
                         <Col md={4} lg={4}>
-                            <Image src="http://imgur.com/iIn4MFv.jpg" className="stepIcon"responsive/>
+                            <Image src="/assets/icons/card.png" className="stepIcon"responsive/>
                         </Col>
                         <Col md={4} lg={4}>
-                            <Image src="http://imgur.com/s8i5tWh.jpg" className="eatIcon"responsive/>
+                            <Image src="/assets/icons/container_600.png" className="eatIcon"responsive/>
                         </Col>
                     </Row>
                     <Row>
