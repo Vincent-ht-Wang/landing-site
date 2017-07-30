@@ -1,18 +1,23 @@
 {
-  "name": "landing-site",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "react": "^15.6.1",
-    "react-bootstrap": "^0.31.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "landing-site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vincent-ht-Wang/landing-site.git"
+    },
+    "author": "Vincent Wang",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Vincent-ht-Wang/landing-site/issues"
+    },
+    "homepage": "https://github.com/Vincent-ht-Wang/landing-site#readme",
+    "dependencies": {
+        "express": "^4.15.3"
+    }
 }

@@ -11,7 +11,7 @@ class SectionTwo extends Component {
                         <p className="sectionTwoSubtext">
                         Food waste is the 3rd largest contributor to global warming, emitting greenhouse gases into the atmosphere when they decompose
                         </p>
-                    <strong><span className="redText">grub</span>snatch</strong> <span className="greenText">helps</span> you find these deals
+                    <strong><span className="redText">grubsnatch</span></strong> <span className="greenText">helps</span> you find these deals
                     <p className="sectionTwoSubtext">
                     You're saving money while also saving the planet
                     </p>

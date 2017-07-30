@@ -15,9 +15,9 @@
 
 #navbarLogo {
     max-height: 10em;
-    max-width: 15em;
+    max-width: 13.5em;
     overflow: visible;
-    margin-top: 0.4em;
+    margin-top: 0.15em;
 }
 
 .navbar-nav li a {
