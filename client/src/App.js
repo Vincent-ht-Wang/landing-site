@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import MyNavbar from './modules/MyNavbar.jsx';
-import SectionOne from './modules/SectionOne.jsx'
-import SectionTwo from './modules/SectionTwo.jsx'
-import SectionThree from './modules/SectionThree.jsx';
+import Home from './modules/Home.jsx'
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import Eateries from './modules/Eateries.jsx'
 
 class App extends Component {
   	render() {
 		return (
-			<div className="App">
+			<div>
 				<MyNavbar/>
-				<SectionOne/>
-				<SectionTwo/>
-				<SectionThree/>
+				<Switch>
+					<Route exact path="/" component={Home}/>
+					<Route path="/eateries" component={Eateries}/>
+				</Switch>
 			</div>
 		);
   	}

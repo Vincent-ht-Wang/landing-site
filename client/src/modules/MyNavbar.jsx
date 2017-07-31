@@ -3,6 +3,7 @@ import {Navbar} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import {NavItem} from 'react-bootstrap';
 import {Image} from 'react-bootstrap';
+import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
 import AccessModal from './AccessModal.jsx';
 
 class MyNavbar extends Component {
@@ -11,9 +12,9 @@ class MyNavbar extends Component {
             <div>
                 <Navbar fixedTop fluid>
                     <Navbar.Header>
-                        <a href="/">
+                        <Link to="/">
                             <Image src="/assets/logo/png/color_logo_transparent@2x.png" id="navbarLogo" className="navbar-left"/>
-                        </a>
+                        </Link>
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse>
@@ -21,7 +22,7 @@ class MyNavbar extends Component {
                             <NavItem eventKey={1} href="#"> 
                                 <AccessModal/>
                             </NavItem>
-                            <NavItem eventKey={2} href="/eateries"> 
+                            <NavItem href="/eateries">
                                 For Eateries 
                             </NavItem>
                         </Nav>

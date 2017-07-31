@@ -8,6 +8,10 @@
     color: #FF4B54;
 }
 
+.navbar {
+    background-color: white;
+}
+
 #navbarLogo {
     max-height: 10em;
     max-width: 13.5em;
@@ -27,7 +31,7 @@
     background-size: 100%;
     text-align: center;
     color: white;
-    font-family: 'Proxima Nova', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 #jumbotronOne {
@@ -155,4 +159,8 @@
 .accessButton:focus {
     background-color: #69efa4;
     border-color: #69efa4;
+}
+
+#jumbotronFour {
+    background-image: url('/assets/landingPage.jpg')
 }
