@@ -38,7 +38,6 @@
     background-image: url("/assets/landingPage2.jpg");
     padding-top: 6.5%;
     padding-bottom: 7.95%;
-    margin-bottom: 0;
 }
 
 .sectionOneHeader {
@@ -162,5 +161,9 @@
 }
 
 #jumbotronFour {
-    background-image: url('/assets/landingPage.jpg')
+    background-image: url('/assets/eateryPage.jpeg');
+    color: white;
+    padding-top: 13.5em;
+    line-height: 13.25;
+    background-position: 50% 35%;
 }
