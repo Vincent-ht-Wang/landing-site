@@ -9,9 +9,11 @@ class CustomerForm extends Component {
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handlePassChange = this.handlePassChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleNameChange = this.handleNameChange.bind(this)
         this.state = {
             PassValue: "",  
-            emailValue: ""
+            emailValue: "",
+            name: ""
         }
     }
 
@@ -31,10 +33,24 @@ class CustomerForm extends Component {
         })
     }
 
+    handleNameChange(e) {
+        this.setState({
+            name: e.target.value
+        })
+    }
+
     render() {
         return(
             <form>
                 <div className="customerFormBlock">
+                    <FormGroup className="customerInput">
+                        <FormControl
+                            type="email"
+                            value={this.state.name}
+                            placeholder="Full Name"
+                            onChange={this.handleNameChange}
+                            />
+                    </FormGroup>
                     <FormGroup className="customerInput">
                         <FormControl
                             type="email"
@@ -57,7 +73,7 @@ class CustomerForm extends Component {
                     <div className="customerSubmitAdjustor">
                         <Button 
                         type="submit"
-                        className="customerSubmitButton"
+                        className="submitButton"
                         block
                         onClick={this.handleSubmit}
                         >

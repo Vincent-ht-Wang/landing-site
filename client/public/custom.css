@@ -35,7 +35,7 @@
 }
 
 #jumbotronOne {
-    background-image: url("/assets/landingPage2.jpg");
+    background-image: url("/assets/landingPage.jpg");
     padding-top: 6.5%;
     padding-bottom: 7.95%;
 }
@@ -118,46 +118,46 @@
     padding-right: 8em;
 }
 
-.customerSubmitButton {
+.submitButton {
     background-color: #21ce6e;
     color: white;
     border-color: #21ce6e;
 }
 
-.customerSubmitButton:active {
+.submitButton:active {
     background-color: #69efa4;
     border-color: #69efa4;
 }
 
-.customerSubmitButton:hover {
+.submitButton:hover {
     background-color: #69efa4;
     border-color: #69efa4;
 }
 
-.customerSubmitButton:focus {
+.submitButton:focus {
     background-color: #69efa4;
     border-color: #69efa4;
 }
 
 .accessButton {
-    background-color: #21ce6e;
+    background-color: #FF4B54;
     color: white;
-    border-color: #21ce6e;
+    border-color: #FF4B54;
 }
 
 .accessButton:active {
-    background-color: #69efa4;
-    border-color: #69efa4;
+    background-color: #ff7c83;
+    border-color: #ff7c83;
 }
 
 .accessButton:hover {
-    background-color: #69efa4;
-    border-color: #69efa4;
+    background-color: #ff7c83;
+    border-color: #ff7c83;
 }
 
 .accessButton:focus {
-    background-color: #69efa4;
-    border-color: #69efa4;
+    background-color: #ff7c83;
+    border-color: #ff7c83;
 }
 
 #jumbotronFour {
@@ -166,4 +166,51 @@
     padding-top: 13.5em;
     line-height: 13.25;
     background-position: 50% 35%;
+}
+
+#jumbotronFive {
+    margin-top: -2.1em;
+    margin-bottom: -2.4em;
+    background-color: #161618;
+}
+
+.benefitsIntro {
+    color: white;
+    font-size: 250%;
+}
+
+.benefitsText {
+    color: white;
+}
+
+#jumbotronSeven {
+    background-color: white;
+    margin-top: 3.2em;
+    margin-bottom: 0;
+}
+
+.eateryInput {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.partnershipButton {
+    background-color: #21ce6e;
+    color: white;
+    border-color: #21ce6e;
+}
+
+.partnershipButton:focus {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.partnershipButton:hover {
+    background-color: #69efa4;
+    border-color: #69efa4;
+}
+
+.partnershipButton:active {
+    background-color: #69efa4;
+    border-color: #69efa4;
 }
