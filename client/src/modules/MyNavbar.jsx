@@ -3,7 +3,7 @@ import {Navbar} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import {NavItem} from 'react-bootstrap';
 import {Image} from 'react-bootstrap';
-import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import AccessModal from './AccessModal.jsx';
 
 class MyNavbar extends Component {

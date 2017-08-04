@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {FormGroup} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
-import {HelpBlock} from 'react-bootstrap';
 
 class PartnershipForm extends Component {
     constructor(props) {
@@ -15,6 +14,7 @@ class PartnershipForm extends Component {
         this.handleStoreChange = this.handleStoreChange.bind(this)
         this.handleAddressChange = this.handleAddressChange.bind(this)
         this.handleEmailChange = this.handleEmailChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleNameChange(e) {
@@ -39,6 +39,10 @@ class PartnershipForm extends Component {
         this.setState({
             email: e.target.value
         })
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
     }
 
     render() {
@@ -93,7 +97,7 @@ class PartnershipForm extends Component {
                         </FormGroup>
                     </div>
 
-                    <Button type="submit" bsStyle="success" className="submitButton" block>
+                    <Button type="submit" bsStyle="success" className="submitButton" onClick={this.handleSubmit} block>
                         Submit
                     </Button>
                 </form>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Jumbotron} from 'react-bootstrap';
-import AccessModal from './AccessModal.jsx';
 import PartnershipModal from './PartnershipModal.jsx'
 
 class SectionFour extends Component {

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {Jumbotron} from 'react-bootstrap';
 import SectionFour from './SectionFour.jsx';
 import SectionFive from './SectionFive.jsx';
-import SectionSeven from './SectionSeven.jsx';
+import SectionSix from './SectionSix.jsx';
 
 class Eateries extends Component {
     render() {
@@ -10,7 +9,7 @@ class Eateries extends Component {
             <div>
                 <SectionFour/>
                 <SectionFive/>
-                <SectionSeven/>
+                <SectionSix/>
             </div>
         )
     }

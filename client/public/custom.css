@@ -30,7 +30,7 @@
     background-position: 50% 50%;
     background-size: 100%;
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Proxima Nova', sans-serif;
 }
 
@@ -38,6 +38,7 @@
     background-image: url("/assets/landingPage.jpg");
     padding-top: 6.5%;
     padding-bottom: 7.95%;
+    color: white;
 }
 
 .sectionOneHeader {
@@ -163,7 +164,7 @@
 #jumbotronFour {
     background-image: url('/assets/eateryPage.jpeg');
     color: white;
-    padding-top: 13.5em;
+    padding-top: 13.55em;
     line-height: 13.25;
     background-position: 50% 35%;
 }
@@ -183,6 +184,10 @@
     color: white;
 }
 
+#benefitsGrid {
+    padding-top: 4em;
+}
+
 #jumbotronSeven {
     background-color: white;
     margin-top: 3.2em;
@@ -192,6 +197,20 @@
 .eateryInput {
     padding-top: 2em;
     padding-bottom: 1em;
+}
+
+.faqButtonOne {
+    padding-top: 5em;
+}
+
+#faqGrid {
+    padding-top: 5em;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.panel {
+    font-size: 120%;
 }
 
 .partnershipButton {

@@ -9,9 +9,9 @@ class SectionFive extends Component {
             <div>
                 <Jumbotron id="jumbotronFive">
                     <h3 className="benefitsIntro">
-                        Get more <span className="greenText">exposure</span>, <span className="redText">sell more</span> food
+                        Get more <span className="redText">exposure</span>, <span className="greenText">sell more</span> food
                     </h3>
-                        <Grid>
+                        <Grid id="benefitsGrid">
                             <Row>
                                 <Col md={4} lg={4}>
                                     <Image src="/assets/temporaryIcon.jpg"/>
