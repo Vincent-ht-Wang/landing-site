@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import {Jumbotron} from 'react-bootstrap';
 import AccessModal from './AccessModal.jsx';
 

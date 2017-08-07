@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import {FormControl} from 'react-bootstrap';
 import {FormGroup} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';

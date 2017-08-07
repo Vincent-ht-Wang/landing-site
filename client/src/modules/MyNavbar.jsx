@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import {Navbar} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
 import {NavItem} from 'react-bootstrap';
