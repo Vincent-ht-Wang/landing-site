@@ -51,7 +51,7 @@ class AccessModal extends Component {
 }
 
 AccessModal.propTypes = {
-    buttonSize: PropTypes.string
+    buttonSize: PropTypes.string,
 }
 
 export default AccessModal;

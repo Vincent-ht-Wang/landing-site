@@ -10,10 +10,19 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="/assets/logo/Social Media Assets/favicon/favicon_symbol_inverse.png">
+
+    <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- custom CSS -->
     <link rel="stylesheet" href="/custom.css">
+
+    <!-- fonts -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Proxima+Nova|Campton+Medium'>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,16 +37,33 @@
 
 <body>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Firebase Services -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+
+    <!-- ReactFire -->
+    <script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyBPiP8-8tUjJnPOdwGZaHeWmEJtAohdn5Y",
+            authDomain: "grubsnatch.firebaseapp.com",
+            databaseURL: "https://grubsnatch.firebaseio.com",
+            projectId: "grubsnatch",
+            storageBucket: "grubsnatch.appspot.com",
+            messagingSenderId: "490013699307"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+
+
+
 </body>
 
 </html>

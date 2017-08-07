@@ -14,13 +14,13 @@ class SectionFive extends Component {
                         <Grid id="benefitsGrid">
                             <Row>
                                 <Col md={4} lg={4}>
-                                    <Image src="/assets/temporaryIcon.jpg"/>
+                                    <Image src="/assets/icons/money.png" className="benefitsIcon"/>
                                 </Col>
                                 <Col md={4} lg={4}>
-                                    <Image src="/assets/temporaryIcon.jpg"/>
+                                    <Image src="/assets/icons/network.png" className="benefitsIcon"/>
                                 </Col>
                                 <Col md={4} lg={4}>
-                                    <Image src="/assets/temporaryIcon.jpg"/>
+                                    <Image src="/assets/icons/shop.png" className="benefitsIcon"/>
                                 </Col>
                             </Row>
                             <Row>
@@ -49,17 +49,17 @@ class SectionFive extends Component {
                                     </h4>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row id="benefitsRowTwo">
                                 <Col md={4} lg={4}>
                                 </Col>
                                 <Col md={4} lg={4}>
-                                    <Image src="/assets/temporaryIcon.jpg"/>
+                                    <Image src="/assets/icons/paper_1.png" className="benefitsIcon"/>
                                 </Col>
                                 <Col md={4} lg={4}>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col md={4} lg={4}>
+                                <Col md={4} lg={4}> 
                                 </Col>
                                 <Col md={4} lg={4}>
                                     <h3 className="benefitsText">

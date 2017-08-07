@@ -213,6 +213,30 @@
     font-size: 120%;
 }
 
+#benefitsRowTwo {
+    padding-top: 4em;
+}
+
+.benefitsIcon {
+    max-width: 10em;
+    max-height: 10em;
+}
+
+#thankYouJumbotron {
+    background-image: url("/assets/thankYouPage.jpeg");
+    background-position: 50% 100%;
+    padding-top: 8.55em;
+    margin-bottom: -0.5em;
+}
+
+.thankYouMessage {
+    line-height: 4em;
+}
+
+.thankYouColor {
+    color: white;
+}
+
 .partnershipButton {
     background-color: #21ce6e;
     color: white;
