@@ -15,6 +15,8 @@ var config = {
 
 firebase.initializeApp(config);
 
+var provider = new firebase.auth.GoogleAuthProvider();
+
 class CustomerForm extends Component {
     constructor(props) {
         super(props)
@@ -32,7 +34,7 @@ class CustomerForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         firebase.auth()
-        .createUserWithEmailAndPassword(this.state.emailValue, this.state.passValue)
+        .createUserWithEmailAndPassword(this.state.emailValue, this.state.passValue)    
         .catch((error) => {
             console.error(error)
         })
@@ -41,9 +43,15 @@ class CustomerForm extends Component {
     componentWillMount() {
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                let email = user.email
-                console.log(email + " logged in")
-                window.location = 'thank-you'
+                user.updateProfile({
+                    displayName: this.state.name
+                })
+                .then(() => {
+                    window.location = 'thank-you'
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
             } 
         })
     }
