@@ -33,9 +33,6 @@ class CustomerForm extends Component {
         e.preventDefault();
         firebase.auth()
         .createUserWithEmailAndPassword(this.state.emailValue, this.state.passValue)
-        .then((userData) => {
-            this.handleAuthChange()
-        })
         .catch((error) => {
             console.error(error)
         })
