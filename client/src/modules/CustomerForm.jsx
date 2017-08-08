@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {FormControl} from 'react-bootstrap';
 import {FormGroup} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import {Overlay, Popover} from 'react-bootstrap';
 import * as firebase from 'firebase';
 
 var config = {
@@ -15,8 +16,6 @@ var config = {
 
 firebase.initializeApp(config);
 
-var provider = new firebase.auth.GoogleAuthProvider();
-
 class CustomerForm extends Component {
     constructor(props) {
         super(props)
@@ -28,14 +27,25 @@ class CustomerForm extends Component {
             passValue: "",  
             emailValue: "",
             name: "",
+            error: null,
+            showErrorMessage: false
         }
     }
 
     handleSubmit(e) {
         e.preventDefault();
         firebase.auth()
-        .createUserWithEmailAndPassword(this.state.emailValue, this.state.passValue)    
+        .createUserWithEmailAndPassword(this.state.emailValue, this.state.passValue) 
+        .then(() => {
+            this.setState({
+                showErrorMessage: false
+            })
+        })   
         .catch((error) => {
+            this.setState({
+                error: error,
+                showErrorMessage: true,
+            })
             console.error(error)
         })
     }
@@ -75,6 +85,12 @@ class CustomerForm extends Component {
     }
 
     render() {
+        let error = this.state.error
+        if (error != null) {
+            error = this.state.error
+        } else {
+            error = "test"
+        }
         return(
             <form>
                 <div className="customerFormBlock">
@@ -115,6 +131,15 @@ class CustomerForm extends Component {
                             Get Early Access 
                         </Button>
                     </div>
+                    <Overlay
+                        show={this.state.showErrorMessage}
+                        placement="bottom"
+                        container={this}
+                    >
+                        <Popover id="popover-contained" title="Woops!">
+                            {error.message}
+                        </Popover>
+                    </Overlay>
             </form>
         )
     }
