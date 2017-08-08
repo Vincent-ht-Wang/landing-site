@@ -14,7 +14,16 @@ var config = {
     messagingSenderId: "490013699307"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(config); 
+
+var database = firebase.database()
+
+function writeUserData(userId, name, email) {
+    database.ref('users/' + userId).set({
+        userName: name,
+        email: email
+    })
+}
 
 class CustomerForm extends Component {
     constructor(props) {
@@ -40,6 +49,8 @@ class CustomerForm extends Component {
             this.setState({
                 showErrorMessage: false
             })
+            var user = firebase.auth().currentUser;
+            writeUserData(user.uid, this.state.name, this.state.emailValue)
         })   
         .catch((error) => {
             this.setState({
@@ -48,20 +59,13 @@ class CustomerForm extends Component {
             })
             console.error(error)
         })
+
     }
 
     componentWillMount() {
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                user.updateProfile({
-                    displayName: this.state.name
-                })
-                .then(() => {
-                    window.location = 'thank-you'
-                })
-                .catch((error) => {
-                    console.error(error)
-                })
+                window.location = "thank-you"
             } 
         })
     }

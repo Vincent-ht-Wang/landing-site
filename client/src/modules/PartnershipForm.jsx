@@ -2,13 +2,29 @@ import React, {Component} from 'react';
 import {FormGroup} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import * as firebase from 'firebase';
+
+let database = firebase.database();
+
+function writeEateryData(eateryId, ownerName, storeName, storeType, address, email) {
+    database.ref('eateries/' + eateryId).set({
+        ownerName: ownerName,
+        storeName: storeName,
+        storeType: storeType,
+        address: address,
+        email: email,
+    })
+}
 
 class PartnershipForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            fullName: "",
-            storeName: ""
+            ownerName: "",
+            storeName: "",
+            storeType: "cafe",
+            address: "",
+            email: "",
         }
         this.handleNameChange = this.handleNameChange.bind(this)
         this.handleStoreChange = this.handleStoreChange.bind(this)
@@ -19,7 +35,7 @@ class PartnershipForm extends Component {
 
     handleNameChange(e) {
         this.setState({
-            fullName: e.target.value
+            ownerName: e.target.value
         })
     }
 
@@ -53,7 +69,7 @@ class PartnershipForm extends Component {
                         <FormGroup>
                             <FormControl
                                 type="text"
-                                value={this.state.fullName}
+                                value={this.state.ownerName}
                                 placeholder="Owner's full name"
                                 onChange={this.handleNameChange}
                             />
@@ -76,6 +92,7 @@ class PartnershipForm extends Component {
                                 <option value="pizza">Pizza store</option>
                                 <option value="sushi">Sushi store</option>
                                 <option value="buffet">Buffet</option>
+                                <option value="donut">Donut store</option>
                                 <option value="other">Other</option>
                             </FormControl>
                         </FormGroup>
