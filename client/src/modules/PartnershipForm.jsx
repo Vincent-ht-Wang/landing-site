@@ -22,7 +22,7 @@ class PartnershipForm extends Component {
         this.state = {
             ownerName: "",
             storeName: "",
-            storeType: "cafe",
+            storeType: "",
             address: "",
             email: "",
         }
@@ -31,6 +31,13 @@ class PartnershipForm extends Component {
         this.handleAddressChange = this.handleAddressChange.bind(this)
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleCatChange = this.handleCatChange.bind(this)
+    }
+
+    handleCatChange(e) {
+        this.setState({
+            storeType: e.target.value
+        })
     }
 
     handleNameChange(e) {
@@ -59,6 +66,18 @@ class PartnershipForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
+        firebase.auth().signInAnonymously().catch((error)=>{
+            console.error(error)
+        })
+    }
+
+    componentWillMount() {
+        firebase.auth().onAuthStateChanged((user)=>{
+            if (user) {
+                writeEateryData(user.uid, this.state.ownerName, this.state.storeName, this.state.storeType, this.state.address, this.state.email)
+                window.location = 'thank-you'
+            }
+        })
     }
 
     render() {
@@ -86,7 +105,9 @@ class PartnershipForm extends Component {
                             <FormControl
                                 componentClass="select"
                                 placeholder="Store type"
+                                onChange={this.handleCatChange}
                             >
+                                <option value="placeholder">Choose eatery type...</option>
                                 <option value="cafe">Cafe</option>
                                 <option value="bakery">Bakery</option>
                                 <option value="pizza">Pizza store</option>
