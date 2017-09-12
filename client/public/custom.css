@@ -398,6 +398,9 @@ body {
         max-height: 5em;
         max-width: 9em;
     }
+    .modalTitleText {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -469,6 +472,9 @@ body {
     #faqGrid {
         padding-left: 0em;
         padding-right: 0em;
+    }
+    .modalTitleText {
+        font-size: 1.5em;
     }
 }
 
@@ -553,5 +559,20 @@ body {
     }
     .col-xs-4 {
         width: 100%;
+    }
+    .modalTitleText {
+        font-size: 1.3em;
+        line-height: 1;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .customerInput {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .customerSubmitAdjustor {
+        width: 100%;
+        padding-left: 0em;
+        padding-right: 0em;
     }
 }
