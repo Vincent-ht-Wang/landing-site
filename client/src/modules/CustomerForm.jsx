@@ -49,9 +49,7 @@ class CustomerForm extends Component {
             this.setState({
                 showErrorMessage: false
             })
-            var user = firebase.auth().currentUser;
-            writeUserData(user.uid, this.state.name, this.state.emailValue)
-        })   
+        })
         .catch((error) => {
             this.setState({
                 error: error,
@@ -59,12 +57,13 @@ class CustomerForm extends Component {
             })
             console.error(error)
         })
-
     }
 
     componentWillMount() {
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
+                user.sendEmailVerification().catch((error) => console.error(error))
+                writeUserData(user.uid, this.state.name, this.state.emailValue)
                 window.location = "thank-you"
             } 
         })

@@ -7,7 +7,7 @@ class SectionSeven extends Component {
     render() {
         return(
             <div>
-                <Jumbotron id="jumbotronSeven">
+                <Jumbotron id="jumbotronSix">
                     <h1>Before you ask</h1>
                     <Faq/>
                     <div className="faqButtonOne">

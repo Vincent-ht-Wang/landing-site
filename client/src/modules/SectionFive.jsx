@@ -13,18 +13,8 @@ class SectionFive extends Component {
                     </h3>
                         <Grid id="benefitsGrid">
                             <Row>
-                                <Col md={4} lg={4}>
+                                <Col md={4} lg={4} sm={4} xs={4}>
                                     <Image src="/assets/icons/money.png" className="benefitsIcon"/>
-                                </Col>
-                                <Col md={4} lg={4}>
-                                    <Image src="/assets/icons/network.png" className="benefitsIcon"/>
-                                </Col>
-                                <Col md={4} lg={4}>
-                                    <Image src="/assets/icons/shop.png" className="benefitsIcon"/>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col md={4} lg={4}>
                                     <h3 className="benefitsText">
                                         More profits
                                     </h3>
@@ -32,7 +22,8 @@ class SectionFive extends Component {
                                         Make money you would've otherwise lost
                                     </h4>
                                 </Col>
-                                <Col md={4} lg={4}>
+                                <Col md={4} lg={4} sm={4} xs={4}>
+                                    <Image src="/assets/icons/network.png" className="benefitsIcon"/>
                                     <h3 className="benefitsText">
                                         Free promotion
                                     </h3>
@@ -40,7 +31,8 @@ class SectionFive extends Component {
                                         Make you store known across our network of hungry customers
                                     </h4>
                                 </Col>
-                                <Col md={4} lg={4}>
+                                <Col md={4} lg={4} sm={4} xs={4}>
+                                    <Image src="/assets/icons/shop.png" className="benefitsIcon"/>
                                     <h3 className="benefitsText">
                                         Improved branding 
                                     </h3>
@@ -50,26 +42,16 @@ class SectionFive extends Component {
                                 </Col>
                             </Row>
                             <Row id="benefitsRowTwo">
-                                <Col md={4} lg={4}>
+                                <Col md={4} lg={4} sm={4} xs={4}>
                                 </Col>
-                                <Col md={4} lg={4}>
-                                    <Image src="/assets/icons/paper_1.png" className="benefitsIcon"/>
-                                </Col>
-                                <Col md={4} lg={4}>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col md={4} lg={4}> 
-                                </Col>
-                                <Col md={4} lg={4}>
+                                <Col md={4} lg={4} sm={4} xs={4}>
+                                    <Image src="/assets/icons/paper_1.png" className="risksIcon"/>
                                     <h3 className="benefitsText">
                                         Risk free
                                     </h3>
                                     <h4 className="benefitsText">
                                         Cancel anytime with no conditions attached
                                     </h4>
-                                </Col>
-                                <Col md={4} lg={4}>
                                 </Col>
                             </Row>
                         </Grid>

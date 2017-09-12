@@ -10,32 +10,24 @@ class HowItWorks extends Component {
         return(
             <div className="howItWorksBlock">
                 <Grid fluid>
-                    <Row>
-                        <Col md={4} lg={4}>
-                            <Image src="/assets/icons/lens.png" className="stepIcon"responsive/>
-                        </Col>
-                        <Col md={4} lg={4}>
-                            <Image src="/assets/icons/card.png" className="stepIcon"responsive/>
-                        </Col>
-                        <Col md={4} lg={4}>
-                            <Image src="/assets/icons/container_600.png" className="eatIcon"responsive/>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={4} lg={4}>
-                            <p>
+                    <Row className="text-center">
+                        <Col md={4} lg={4} sm={4} xs={4}>
+                            <Image src="/assets/icons/lens.png" className="searchIcon center-block" />
+                            <h3 className="howItWorksSubtext">
                                 Easily <span className="redText">find </span>a closing eatery nearby that suits your taste
-                            </p>
+                            </h3>
                         </Col>
-                        <Col md={4} lg={4}>
-                            <p>
+                        <Col md={4} lg={4} sm={4} xs={4}>
+                            <Image src="/assets/icons/card.png" className="cardIcon center-block"/>
+                            <h3 className="howItWorksSubtext">
                                 <span className="redText">Order</span> and purchase your meal through the web-app
-                            </p>
+                            </h3>
                         </Col>
-                        <Col md={4} lg={4}>
-                            <p>
+                        <Col md={4} lg={4} sm={4} xs={4}>
+                            <Image src="/assets/icons/container_600.png" className="eatIcon center-block"/>
+                            <h3 className="howItWorksSubtext">
                                 <span className="greenText">Grab</span> your meal at the eatery knowing you <span className="greenText">saved</span> money and the planet
-                            </p>
+                            </h3>
                         </Col>
                     </Row>
                 </Grid>

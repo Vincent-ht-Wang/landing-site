@@ -1,4 +1,6 @@
-@media (max-width: 767px) {}
+body {
+    font-size: 1.5em;
+}
 
 .greenText {
     color: #21ce6e;
@@ -32,12 +34,14 @@
     text-align: center;
     color: black;
     font-family: 'Proxima Nova', sans-serif;
+    background-repeat: no-repeat;
 }
 
 #jumbotronOne {
     background-image: url("/assets/landingPage.jpg");
     padding-top: 6.5%;
     padding-bottom: 7.95%;
+    font-size: 5em;
     color: white;
 }
 
@@ -56,10 +60,12 @@
 
 .sectionTwoHeader {
     line-height: 3;
+    font-size: 2em;
 }
 
 .sectionTwoSubtext {
     line-height: 2;
+    font-size: 1.4em;
 }
 
 #jumbotronThree {
@@ -68,19 +74,30 @@
     margin-bottom: -2em;
 }
 
-.stepIcon {
-    max-width: 65%;
-    max-height: 65%;
-    padding-left: 10.5em;
-    padding-bottom: 0em;
+.searchIcon {
+    max-width: 35%;
+    max-height: 35%;
     padding-top: 3em;
+    padding-bottom: 1.8em;
+}
+
+.cardIcon {
+    max-width: 35%;
+    max-height: 35%;
+    padding-top: 3em;
+    padding-bottom: 3.2em;
 }
 
 .eatIcon {
-    padding-left: 9em;
+    max-width: 53%;
+    max-height: 53%;
+    padding-top: 0.3em;
     padding-bottom: 1em;
-    max-width: 75%;
-    max-height: 75%;
+    padding-left: 1em;
+}
+
+.howItWorksSubtext {
+    font-size: 1.5em;
 }
 
 .finalAccessButton {
@@ -188,7 +205,7 @@
     padding-top: 4em;
 }
 
-#jumbotronSeven {
+#jumbotronSix {
     background-color: white;
     margin-top: 3.2em;
     margin-bottom: 0;
@@ -222,7 +239,12 @@
     max-height: 10em;
 }
 
-#thankYouJumbotron {
+.risksIcon {
+    max-width: 10em;
+    max-height: 10em;
+}
+
+.thankYouJumbotron {
     background-image: url("/assets/thankYouPage.jpeg");
     background-position: 50% 100%;
     padding-top: 8.55em;
@@ -230,11 +252,17 @@
 }
 
 .thankYouMessage {
-    line-height: 4em;
+    line-height: 4.49em;
+}
+
+.thankYouSubtext {
+    line-height: 1.5em;
 }
 
 .thankYouColor {
     color: white;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .partnershipButton {
@@ -256,4 +284,274 @@
 .partnershipButton:active {
     background-color: #69efa4;
     border-color: #69efa4;
+}
+
+
+/* Tablet landscape and small laptop windows */
+
+@media screen and (min-width: 975px) and (max-width: 1132px) {
+    #jumbotronTwo {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .eatIcon {
+        padding-top: 1.1em;
+        padding-bottom: 1.5em;
+    }
+}
+
+
+/* Tablets portrait */
+
+@media screen and (min-width:600px) and (max-width: 974px) and (orientation: portrait) {
+    #jumbotronOne {
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: 75% 50%;
+    }
+    #jumbotronTwo {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .sectionTwoHeader {
+        font-size: 1.65em;
+        line-height: 1.5;
+    }
+    .sectionTwoSubtext {
+        font-size: 1.2em;
+    }
+    .searchIcon {
+        max-height: 40%;
+        max-width: 40%;
+        padding-top: 2.3em;
+    }
+    .cardIcon {
+        max-height: 40%;
+        max-width: 40%;
+        padding-bottom: 2.3em;
+    }
+    .eatIcon {
+        max-height: 65%;
+        max-width: 65%;
+        padding-top: 1em;
+        padding-bottom: 0em;
+    }
+    .howItWorksSubtext {
+        font-size: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+        line-height: 1.7em;
+    }
+    #jumbotronFour {
+        background-size: 115%;
+        background-position: 70% 20%;
+    }
+}
+
+
+/* Large phones landscape */
+
+@media screen and (min-width:600px) and (max-width: 974px) and (orientation: landscape) {
+    #jumbotronOne {
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: 75% 50%;
+    }
+    #jumbotronTwo {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .sectionTwoHeader {
+        font-size: 1.65em;
+        line-height: 1.5;
+    }
+    .sectionTwoSubtext {
+        font-size: 1.2em;
+    }
+    .searchIcon {
+        max-height: 40%;
+        max-width: 40%;
+        padding-top: 2.3em;
+    }
+    .cardIcon {
+        max-height: 40%;
+        max-width: 40%;
+        padding-bottom: 2.3em;
+    }
+    .eatIcon {
+        max-height: 65%;
+        max-width: 65%;
+        padding-top: 1em;
+        padding-bottom: 0em;
+    }
+    .howItWorksSubtext {
+        font-size: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+        line-height: 1.7em;
+    }
+    #jumbotronFour {
+        background-size: 115%;
+        background-position: 70% 20%;
+    }
+    #navbarLogo {
+        max-height: 5em;
+        max-width: 9em;
+    }
+}
+
+
+/* Small phone landscape */
+
+@media screen and (min-width:300px) and (max-width: 599px) and (orientation: landscape) {
+    #jumbotronOne {
+        background-size: 350%;
+        background-position: 80% 80%;
+    }
+    #jumbotronTwo {
+        font-size: 0.7em;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    .sectionTwoHeader {
+        line-height: 1.5;
+    }
+    .howItWorksSubtext {
+        font-size: 1em;
+        text-align: center;
+        padding-left: 1em;
+    }
+    .searchIcon {
+        max-width: 35%;
+        max-height: 35%;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+    }
+    .cardIcon {
+        max-width: 35%;
+        max-height: 35%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        padding-left: 1em;
+    }
+    .eatIcon {
+        max-width: 55%;
+        max-height: 55%;
+        padding-top: 0.5em;
+        padding-bottom: 0em;
+        padding-left: 1em;
+    }
+    .finalAccessButton {
+        margin-left: 9em;
+        max-height: 55%;
+        max-width: 55%;
+    }
+    #jumbotronFour {
+        background-size: 300%;
+    }
+    #navbarLogo {
+        max-height: 5em;
+        max-width: 9em;
+    }
+    .benefitsIcon {
+        padding-top: 5em;
+        max-height: 12em;
+        max-width: 12em;
+    }
+    #benefitsGrid {
+        padding-top: 0em;
+    }
+    #jumbotronSix {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #faqGrid {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+}
+
+
+/* Small phone portrait */
+
+@media screen and (min-width:300px) and (max-width: 599px) and (orientation: portrait) {
+    #navbarLogo {
+        max-height: 5em;
+        max-width: 9em;
+    }
+    #jumbotronOne {
+        background-size: 300%;
+        background-position: 80% 80%;
+    }
+    #jumbotronTwo {
+        font-size: 0.7em;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    .sectionTwoHeader {
+        line-height: 1.5;
+    }
+    .howItWorksSubtext {
+        font-size: 1em;
+        text-align: center;
+        padding-left: 1em;
+    }
+    .searchIcon {
+        max-width: 35%;
+        max-height: 35%;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        padding-left: 1.7em;
+    }
+    .cardIcon {
+        max-width: 35%;
+        max-height: 35%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        padding-left: 1.7em;
+    }
+    .eatIcon {
+        max-width: 55%;
+        max-height: 55%;
+        padding-top: 0.5em;
+        padding-bottom: 0em;
+        padding-left: 1.7em;
+    }
+    .accessButton {
+        width: 100%;
+    }
+    .finalAccessButton {
+        padding-left: 1em;
+    }
+    #jumbotronFour {
+        background-size: 350%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: 1.5em;
+        margin-top: -6em;
+        margin-bottom: -3em;
+    }
+    #jumbotronFive {
+        font-size: 0.7em;
+    }
+    .benefitsIcon {
+        padding-top: 5em;
+        max-height: 12em;
+        max-width: 12em;
+    }
+    #benefitsGrid {
+        padding-top: 0em;
+    }
+    #jumbotronSix {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #faqGrid {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .col-xs-4 {
+        width: 100%;
+    }
 }

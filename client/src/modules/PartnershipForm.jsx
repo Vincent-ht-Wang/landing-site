@@ -75,7 +75,7 @@ class PartnershipForm extends Component {
         firebase.auth().onAuthStateChanged((user)=>{
             if (user) {
                 writeEateryData(user.uid, this.state.ownerName, this.state.storeName, this.state.storeType, this.state.address, this.state.email)
-                window.location = 'thank-you'
+                window.location = 'thank-you-eatery'
             }
         })
     }
